@@ -36,6 +36,7 @@ def hit?(number)
   number = initial_round #sum of two cards
   prompt_user
   get_user_input
+  display_card_total(number)
   if get_user_input == "s"
     prompt_user
     get_user_input
