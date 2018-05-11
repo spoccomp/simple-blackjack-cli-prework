@@ -32,27 +32,15 @@ def initial_round
   sum
 end
 
-def hit?(number)
-
-  #display_card_total(number)
+def hit? (card_total)
+  # code hit? here
   prompt_user
-  #get_user_input
-  number = initial_round #sum of two cards
   if get_user_input == 'h'
-    number += deal_card
+    card_total += deal_card
   end
-  #if get_user_input == "s"
-    #prompt_user
-    #get_user_input
-  #elsif get_user_input == "h"
-    #number += deal_card # should be the sum of the #initial_round + #deal_card
-  #else
-    #invalid_command
-    #prompt_user
-  #end
-  number
-
+    card_total
 end
+  
 
 def invalid_command
   puts "Please enter valid command"
