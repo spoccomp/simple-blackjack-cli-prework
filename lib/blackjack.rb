@@ -33,10 +33,11 @@ def initial_round
 end
 
 def hit?(number)
-  number = initial_round #sum of two cards
+  
+  #display_card_total(number)
   prompt_user
   get_user_input
-  display_card_total(number)
+  number = initial_round #sum of two cards
   if get_user_input == "s"
     prompt_user
     get_user_input
